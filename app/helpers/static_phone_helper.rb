@@ -1,0 +1,2 @@
+module StaticPhoneHelper
+end
