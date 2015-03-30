@@ -30,32 +30,151 @@
         <!-- Top Navbar-->
         <div class="navbar">
           <div class="navbar-inner">
+
+            <div class="left">
+                <a href="#" class="link icon-only">
+                    <i class="icon ios7-reload"></i>
+                </a>
+            </div>
+
             <div class="center sliding">Feed</div>
+
             <div class="right">
                 <a href="#" class="link icon-only">
                     <i class="icon icon-form-comment"></i>
                 </a>
             </div>
-          </div>
-        </div>
+
+          </div> <!-- /navbar-inner -->
+        </div> <!-- /navbar -->
+
         <div class="pages navbar-through">
-          <div data-page="index-3" class="page">
-            <div class="page-content">
+          <div data-page="index-3" class="page no-swipeback">
+            <div data-distance="50" class="page-content pull-to-refresh-content infinite-scroll">
+              
+              <div class="pull-to-refresh-layer">
+                 <div class="preloader"></div>
+                 <div class="pull-to-refresh-arrow"></div>
+              </div>
 
-              <div class="content-block"><div class="content-block-inner">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor.</p>
-              </div></div>
-              <div class="content-block"><div class="content-block-inner">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor.</p>
-              </div></div>
-              <div class="content-block"><div class="content-block-inner">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor.</p>
-              </div></div>
-              <div class="content-block"><div class="content-block-inner">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel commodo massa, eu adipiscing mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ultricies dictum neque, non varius tortor fermentum at. Curabitur auctor cursus imperdiet. Nam molestie nisi nec est lacinia volutpat in a purus. Maecenas consectetur condimentum viverra. Donec ultricies nec sem vel condimentum. Phasellus eu tincidunt enim, sit amet convallis orci. Vestibulum quis fringilla dolor.</p>
-              </div></div>
+              <div class="list-block media-list">
+                 <div class="load-result"></div>
+                 <ul class="time-line-content">
+                    <li data-id="48" class="item-content card-content">
+                        <div class="item-inner">
+                            <div class="item-header">
+                                <div class="avatar">
+                                    <%= image_tag("joey.jpg") %>
+                                </div>
+                                <div class="detail">
+                                    <p class="nickname">Joey Tribbiani</p>
+                                    <p data-time="1404784104" class="create-time">2014-07-07 21:48</p>
+                                    <p class="card-tag">Update</p>
+                                </div>
+                            </div>
+                            <div class="click-content">
+                                <div class="item-subtitle">
+                                    I just got a new pet duck!  Who wants to come over and play with it?
+                                </div>
+                            </div>
+                            <div class="item-tools">
+                                <ul>
+                                    <li><i class="icon ios7-redo-outline"></i><span class="text">Like</span></li>
+                                    <li class="tool-line"></li>
+                                    <li><a href="page/item.html?id=48"><i class="icon ios7-chatbubble-outline"></i><span class="text">Comment</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-id="47" class="item-content card-content">
+                        <div class="item-inner">
+                            <div class="item-header">
+                                <div class="avatar">
+                                    <%= image_tag("monica.jpg") %>
+                                </div>
+                                <div class="detail">
+                                    <p class="nickname">Monica Geller</p>
+                                    <p data-time="1404783664" class="create-time">2014-07-07 21:41</p>
+                                </div>
+                            </div>
 
-            </div> <!-- /page-content -->
+                            <div class="click-content">
+
+                                <div class="item-subtitle">
+                                    Hey all!  I found a set of keys when I was cleaning out the basement.
+                                </div>
+                            </div>
+                            <div class="item-tools">
+                                <ul>
+                                    <li><i class="icon ios7-redo-outline"></i><span class="text">Like</span></li>
+                                    <li class="tool-line"></li>
+                                    <li><a href="page/item.html?id=47"><i class="icon ios7-chatbubble-outline"></i><span class="text">Comment</span></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li data-id="45" class="item-content card-content">
+                        <div class="item-inner">
+                            <div class="item-header">
+                                <div class="avatar">
+                                    <%= image_tag("phoebe.jpg") %>
+                                </div>
+                                <div class="detail">
+                                    <p class="nickname">Phoebe Buffay</p>
+                                    <p data-time="1404781124" class="create-time">2014-07-07 20:58</p>
+                                </div>
+                            </div>
+
+                            <div class="click-content">
+
+                                <div class="item-subtitle">
+                                    Smelly cat, smelly cat, what are they feeding you?
+                                </div>
+                            </div>
+                            <div class="item-tools">
+                                <ul>
+                                    <li><i class="icon ios7-redo-outline"></i><span class="text">Like</span></li>
+                                    <li class="tool-line"></li>
+                                    <li><a href="page/item.html?id=45"><i class="icon ios7-chatbubble-outline"></i><span class="text">Comment</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-id="44" class="item-content card-content">
+                        <div class="item-inner">
+                            <div class="item-header">
+                                <div class="avatar">
+                                    <%= image_tag("chandler.jpg") %>
+                                </div>
+                                <div class="detail">
+                                    <p class="nickname">Chandler Bing</p>
+                                    <p data-time="1404781124" class="create-time">2014-07-07 20:58</p>
+                                </div>
+                            </div>
+
+                            <div class="click-content">
+
+                                <div class="item-subtitle">
+                                    I got a new computer with a 44K modem!
+                                </div>
+                            </div>
+                            <div class="item-tools">
+                                <ul>
+                                    <li><i class="icon ios7-redo-outline"></i><span class="text">Like</span></li>
+                                    <li class="tool-line"></li>
+                                    <li><a href="page/item.html?id=44"><i class="icon ios7-chatbubble-outline"></i><span class="text">Comment</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                 </ul>
+              </div> <!-- /.list-block media-list -->
+
+            </div> <!-- /data-distance -->
           </div> <!-- /data-page -->
         </div> <!-- /pages -->
       </div> <!-- /view-1 -->
@@ -256,13 +375,12 @@
             <span class="tabbar-label">Feed</span>
           </a>
           <a href="#view-2" class="tab-link">
-            <i class="icon tabbar-demo-icon-2"></i>
+            <i class="icon tabbar-demo-icon-3"></i>
             <span class="tabbar-label">Neighbors</span>
           </a>
           <a href="#view-3" class="tab-link">
-            <i class="icon tabbar-demo-icon-3">
-              <span class="badge bg-red">4</span>
-            </i><span class="tabbar-label">Messages</span></a>
+            <i class="icon tabbar-demo-icon-2"></i>
+            <span class="tabbar-label">Messages</span></a>
             <a href="#view-4" class="tab-link">
               <i class="icon tabbar-demo-icon-4"></i>
               <span class="tabbar-label">Me</span>
